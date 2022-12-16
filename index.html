@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+
+<body>
+
+    <nav id="nav-expan" class="navbar navbar-expand-sm navbar-light bg-white">
+        <a class="navbar-brand" href="#" id="nav-bar-down"> <img id="log-left" src="img/logo.svg" alt=""> </a>
+       
+        <nav class="nav-bar">
+          <button class="dropbtn"> <img src="img/icon-menu.svg" alt=""></button>
+          <ul class="dropdown-content">
+              <button class="closee"> <img src="img/icon-close.svg" style="width: 1.2rem;" alt=""></button>
+              <div class="li-itemm">
+
+                <li>
+                  <a href="">Collections</a>
+              </li>
+              <li>
+                  <a href="">Men</a>
+              </li>
+              <li>
+                  <a href="">Women</a>
+              </li>
+              <li>
+                  <a href="">About</a>
+              </li>
+              <li>
+                  <a href="">Contact</a>
+              </li>
+
+              </div>
+              
+          </ul>
+      </nav>
+
+        <div class="navbar-nav" id="nav-mar">
+          <a class="nav-item nav-link" href="#" id="icon-margin"><img id="img-crt" src="img/icon-cart.svg" alt=""></a>
+          <a class="nav-item nav-link" href="#"><img id="img-ava" src="img/image-avatar.png" alt="" style="width: 2.8rem;"></a>
+        </div>
+
+    </nav>
+      
+      
+      <hr>
+
+      <div class="card" id="visao">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" id="list-parent"><b>Cart</b></li>
+          <li class="list-group-item" id="list-child"> <p id="p-chil">Your cart is empty.</p> </li>
+          <li class="list-group-item" id="list-child2"> 
+            
+          <div class="cart-filled-parent">
+          
+            <div class="cart-filled">
+              
+              <div id="cart-filled-img">
+                  <img id="per-sm-img" src="img/image-product-1.jpg" alt="" style="width: 3rem;">
+              </div>
+
+              <div>
+                  <p id="res4">Fall Limited Edition Sneakers</p>
+                  <p id="res3"> </p>
+              </div>
+
+              <div id="del">
+                  <img src="img/icon-delete.svg" alt="">
+              </div>            
+
+            </div>
+
+           <div class="cart-filled">
+               <button type="button" id="btn3-cart" class="btn btn-secondary btn-lg"> <span id="wh">  Checkout </span></button>
+            </div>
+        </div>
+
+                    
+          </li>
+        </ul>
+      </div>
+
+      <div class="container">
+     
+       <div class="row" id="larg">
+
+            <div class="col" id="col1-size">
+        
+        
+                <div class="row">
+                  <div class="col">
+
+                    <div class="card" id="img-border" style="width: 27rem;">
+                        <img class="card-img-top" id="img-border" src="img/image-product-1.jpg" alt="Card image cap">
+                    </div>
+
+
+                    <!-- Galeria Mobile-->
+                    
+                    <div class="mslide">
+                      <img class="mySlides" src="img/image-product-1.jpg">
+                      <img class="mySlides" src="img/image-product-2.jpg">
+                      <img class="mySlides" src="img/image-product-3.jpg">
+                      <img class="mySlides" src="img/image-product-4.jpg">
+
+                      <a class="w3-btn-floating" onclick="plusDivs(-1)"><img id="pos-nav-left" src="img/icon-previous.svg" alt=""></a>
+                      <a class="w3-btn-floating" onclick="plusDivs(+1)"><img id="pos-nav-right" src="img/icon-next.svg" alt=""></a>
+                    </div>
+                      <!-- <a class="prev" onclick="plusSlide(-1)">❮</a>
+                      <a class="next" onclick="plusSlide(1)">❯</a>-->
+                   
+
+                    <!--<div style="text-align:center">
+                      <span class="dot" onclick="currentSliden(1)"></span> 
+                      <span class="dot" onclick="currentSliden(2)"></span> 
+                      <span class="dot" onclick="currentSliden(3)"></span> 
+                    </div>-->
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                      <span class="close">&times;</span>
+                      <!--<img class="modal-content" id="img01">-->
+
+                      <div class="card" id="img-border2" style="width: 27rem;">
+                        <img class="card-img-tp" id="img-border" src="img/image-product-1.jpg" alt="Card image cap">
+                      </div>
+
+                      <div class="card" id="img-border2" style="width: 27rem;">
+                        <img class="card-img-tp" id="img-border" src="img/image-product-2.jpg" alt="Card image cap">
+                      </div>
+
+                      <div class="card" id="img-border2" style="width: 27rem;">
+                        <img class="card-img-tp" id="img-border" src="img/image-product-3.jpg" alt="Card image cap">
+                      </div>
+
+                      <div class="card" id="img-border2" style="width: 27rem;">
+                        <img class="card-img-tp" id="img-border" src="img/image-product-4.jpg" alt="Card image cap">
+                      </div>
+                      
+                      
+                      <a class="prev" onclick="plusSlides(-1)"><img src="img/icon-previous.svg" alt=""></a>
+                      <a class="next" onclick="plusSlides(1)"><img src="img/icon-next.svg" alt=""></a>
+
+                      <br>
+
+                    <div style="text-align:center" id="query-img">
+
+                      <img class="dot" id="img-border3" src="img/image-product-1.jpg" alt="Card image cap" onclick="currentSlide(1)">
+                      <img class="dot" id="img-border3" src="img/image-product-2.jpg" alt="Card image cap" onclick="currentSlide(2)">
+                      <img class="dot" id="img-border3" src="img/image-product-3.jpg" alt="Card image cap" onclick="currentSlide(3)">
+                      <img class="dot" id="img-border3" src="img/image-product-4.jpg" alt="Card image cap" onclick="currentSlide(4)">
+
+                    </div>
+
+                    </div>
+
+
+
+                  </div>
+                  
+                </div>
+                <div class="row" id="alinhar">
+                    
+                  <div class="col">
+
+                    <div class="card" id="img-border-min" style="width: 5rem;">
+                        <img class="card-img-top" id="img-border-min" src="img/image-product-1.jpg" alt="Card image cap">
+                    </div>
+
+                  </div>
+
+                  <div class="col">
+
+                    <div class="card" id="img-border-min" style="width: 5rem;">
+                        <img class="card-img-top" id="img-border-min" src="img/image-product-2.jpg" alt="Card image cap">
+                    </div>
+                    
+                  </div>
+
+                  <div class="col">
+
+                    <div class="card" id="img-border-min" style="width: 5rem;">
+                        <img class="card-img-top" id="img-border-min" src="img/image-product-3.jpg" alt="Card image cap">
+                    </div>
+                    
+                  </div>
+
+                  <div class="col">
+
+                    <div class="card" id="img-border-min1" style="width: 5rem;">
+                        <img class="card-img-top" id="img-border-min" src="img/image-product-4.jpg" alt="Card image cap">
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+              
+            
+            </div>
+
+            <div class="col" id="col2-size">
+          
+            <div class="row" id="row-margem-top">
+                <div class="col">
+                    <p id="p-orange">Sneaker Company</p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                  <h1 id="tit1"> Fall Limited Edition Sneakers</h1>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col" id="col-p-margem">
+                    <p>These low-profile sneakers are you perfect casual wear</p>
+                    <p id="p-margem-top">companion. Featuring a durable rubber outer sole, they'll</p>
+                    <p id="p-margem-top">withstand everything the weather can offer.</p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                  <div id="preco-original"> <input type="hidden" value="125"> $125.00 </div>
+                </div>
+                <div class="col" id="per-size">
+                    <div id="per">50%</div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                  <div id="p-antigo">$250.00</div>
+                  </div>
+            </div>
+
+            <div class="row">
+                <div class="col" id="col-p-margem">
+                  <form action="">
+                    <div class="number-input">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                      <input class="quantity" min="1" max="1000" name="quantity" value="1" type="number">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                    <button type="button" id="btn2-cart" class="btn btn-secondary btn-lg"> <span id="wh"> <img src="img/icon-cart.svg" id="c"> Add to cart </span></button>
+                  </form> 
+                </div>
+                  
+            </div>
+
+            </div>
+
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
